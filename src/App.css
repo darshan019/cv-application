@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.head{
+  width: 100%;
+  height: 100px;
+  background-color: #374151;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cv-body{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-self: center;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #9ca3af;
+  border-radius: 5px;
+}
+
+.general-info{
+  grid-column: 1/2;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  border-right: 2px solid #374151;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit-btn{
+  background-color: #9ca3af;
+  border: none;
+  margin-left: 4px;
+}
+
+#edit-icon{
+  width: 20px;
+  height: 20px;
+}
+#edit-name{
+  width: 100%;
+  height: 20px;
+}
+
+#save-btn{
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  margin-top: 5px;
+  color: white;
+  background-color: #374151;
+  border: none;
+  border-radius: 3px;
+}
+
+.abt1, .abt2{
+  display: grid;
+  grid-template-rows: 65px 65px;
+}
+.carrer-info{
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  gap: 20px;
+}
+.education h1{
+  text-align: center;
+  margin-top: 20px;
+}
+.education{
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;  
+}
+
+.academics{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 30px;
+  align-items: center;
+  gap: 20px;
+}
+#school-input{
+  width: 170px;
+  height: 20px;
+}
+
+.card{
+  display: flex;
+  width: 100%;
+  min-height: 65px;
+  max-height: fit-content;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.experience{
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.prev-jobs{
+  display: grid;
+  margin-top: 25px;
+  gap: 15px;
+  width: 100%;
+  grid-template-rows: auto;
+  height: fit-content;
+  padding: 20px;
+}
+
+.experience h1{
+  text-align: center;
+}
+.inputs{
+  display: grid;
+  margin-top: 20px;
+  grid-template-rows: auto;
+  gap: 7px;
+  width: 250px;
+}
+
+.ed-form{
+  display: grid;
+  width: 500px;
+  gap: 5px;
+  grid-template-rows: auto;
+  margin: auto;
+}
